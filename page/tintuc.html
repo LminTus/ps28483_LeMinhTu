@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(19, 18, 18, 0.79);
+            position: relative;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+
+        }
+
+        .menu li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 16px 10px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .login {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            translate: 0 -50%;
+        }
+        .login li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .login li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 16px 10px;
+        }
+
+        li:hover {
+            background-color: red;
+        }
+
+        .container {
+            width: 90%;
+            height: 480px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+
+
+        #footer {
+            width: 100%;
+            background: rgba(19, 18, 18, 0.79);
+            height: 322px;
+            padding: 0px 63px;
+            padding-top: 57px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #footer .box {
+            width: 3000px;
+            color: #fff;
+        }
+
+        #footer .box .quick-menu {
+            margin-top: 40px;
+
+        }
+
+
+        #footer .box .quick-menu .item {
+            margin-bottom: 12px;
+
+        }
+
+        #footer .box .quick-menu,
+        .item a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #footer .box form input {
+            width: 294px;
+            height: 42px;
+            background: transparent;
+            padding-left: 20px;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        #footer .box form button {
+            background: #362f2f;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0.25);
+            width: 163px;
+            height: 38px;
+            margin-top: 29px;
+            color: #fff;
+        }
+
+        .container>.col-4 {
+            width: calc(25% - 15px);
+            height: 250px;
+            float: left;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .col-4>.img {
+            width: 100%;
+            height: 80%;
+        }
+
+        .col-4>.img>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mr20 {
+            margin-right: 20px;
+        }
+
+        .mb20 {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #362f2f;
+            padding: 10px 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../img/Apple-Logo.png" alt="logo">
+        <div class="menu">
+            <ul>
+                <li><a href="../page/trangchu.html">Trang chủ</a></li>
+                <li><a href="../page/sanpham.html">Sản phẩm</a></li>
+                <li><a href="../page/tintuc.html">Tin tức</a></li>                
+                <li><a href="../page/lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <ul>
+                <li>Đăng kí</li>
+                <li><a href="../page/dangnhap.html">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">ƯU ĐÃI THANH TOÁN</div>
+        <div class="col-4 mr20">
+            <div class="img"> <img src="../img/momo.jpg" width="280" alt=""></div>
+            <div class="text">Thanh toán bằng MOMO</div>
+        </div>
+        <div class="col-4 mr20">
+            <div class="img"> <img src="../img/MBB.jpg" width="280" alt=""></div>
+            <div class="text">Thanh toán bằng MB bank</div>
+        </div>
+        <div class="col-4 mr20">
+            <div class="img"> <img src="../img/tien3.png" width="280" alt=""></div>
+            <div class="text">Thanh toán khi nhận hàng</div>
+        </div>
+        <div class="col-4">
+            <div class="img"> <img src="../img/tien4.webp" width="280" alt=""></div>
+            <div class="text">Mua hàng trực tiếp</div>
+        </div>
+        <div class="mb20"></div>
+        <div class="title">CHUYÊN TRANG THƯƠNG HIỆU</div>
+        <div class="col-4 mr20">
+            <div class="img"> <img src="../img/st1.jpg" width="280" alt=""></div>
+        </div>
+        <div class="col-4 mr20">
+            <div class="img"> <img src="../img/st2.png" width="280" alt=""></div>
+        </div>
+        <div class="col-4 mr20">
+            <div class="img"> <img src="../img/Belkin-Logo.wine.png" width="280" alt=""></div>
+        </div>
+        <div class="col-4">
+            <div class="img"> <img src="../img/st4.webp" width="280" alt=""></div>
+        </div>
+        <div class="title">TIN TỨC</div>
+        <div class="col-4 mr20">
+            <div class="img"> <img src="../img/tin4.jpg" width="280" alt=""></div>
+            <div class="text">Facebook và Instagram chuẩn bị bán tick xanh</div>
+        </div>
+        <div class="col-4 mr20">
+            <div class="img"> <img src="../img/tintuc2.jpg" width="280" alt=""></div>
+            <div class="text">Chatbot mới trả lời sai, công ty mẹ Google mất 100 tỷ USD</div>
+        </div>
+        <div class="col-4 mr20">
+            <div class="img"> <img src="../img/tintuc3.png" width="280" alt=""></div>
+            <div class="text">Dù chi phí sản xuất iPhone 14 Pro Max tăng, Apple vẫn lãi lớn</div>
+        </div>
+        <div class="col-4">
+            <div class="img"> <img src="../img/5g.jpg" width="280" alt=""></div>
+            <div class="text">Nhiều ứng dụng của Meta gặp sự cố gây gián đoạn hoạt động tại Mỹ</div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="../img/Apple-Logo.png" alt="" width="200px">
+            </div>
+
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href="../page/trangchu.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="../page/sanpham.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="../page/lienhe.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="../page/tintuc.html">Tin tức</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href=""><box-icon name='phone'></box-icon> +8412345678</a>
+                </div>
+                <div class="item">
+                    <a href=""><box-icon name='mail-send'></box-icon>LMT@gmail.com</a>
+                </div>
+                <div class="item">
+                    <a href=""><box-icon name='map'></box-icon>Lê Văn Sĩ, Q3, TP.HCM</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>ĐĂNG KÍ NHẬN BẢN TIN MỚI NHẤT</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </form>
+        </div>
+
+</body>
+
+</html>

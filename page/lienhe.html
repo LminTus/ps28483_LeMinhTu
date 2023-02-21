@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(19, 18, 18, 0.79);
+            position: relative;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+
+        }
+
+        .menu li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 16px 10px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .login {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            translate: 0 -50%;
+        }
+
+        .login li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .login li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 16px 10px;
+        }
+
+        li:hover {
+            background-color: red;
+        }
+
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+
+        }
+
+
+        .submit {
+            background-color: #04AA6D;
+            width: 80px;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+
+        }
+
+        .submit:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            padding: 20px;
+            padding-top: 20px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            font-variant: small-caps;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 50px;
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: #626a67;
+        }
+
+
+        .container {
+            width: 90%;
+            height: 480px;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .nd {
+            margin-left: 60px;
+            color: #362f2f
+        }
+
+
+        #footer {
+            margin-top: 50px;
+            width: 100%;
+            background: rgba(19, 18, 18, 0.79);
+            height: 322px;
+            padding: 0px 63px;
+            padding-top: 57px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #footer .box {
+            width: 3000px;
+            color: #fff;
+        }
+
+        #footer .box .quick-menu {
+            margin-top: 40px;
+
+        }
+
+
+        #footer .box .quick-menu .item {
+            margin-bottom: 12px;
+
+        }
+
+        #footer .box .quick-menu,
+        .item a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #footer .box form input {
+            width: 294px;
+            height: 42px;
+            background: transparent;
+            padding-left: 20px;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        #footer .box form button {
+            background: #362f2f;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0.25);
+            width: 163px;
+            height: 38px;
+            margin-top: 29px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../img/Apple-Logo.png" alt="logo">
+        <div class="menu">
+            <ul>
+                <li><a href="../page/trangchu.html">Trang chủ</a></li>
+                <li><a href="../page/sanpham.html">Sản phẩm</a></li>
+                <li><a href="../page/tintuc.html">Tin tức</a></li>
+                <li><a href="../page/lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <ul>
+                <li>Đăng kí</li>
+                <li><a href="../page/dangnhap.html">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>LIÊN HỆ</h1>
+    <br><br>
+    <p>"Chúng tôi luôn sẵn sàng hỗ trợ cho bạn"</p>
+    <br> <br>
+    <hr>
+    <form action="">
+
+        <label for=""><strong>Tên của bạn là gì?</strong></label>
+        <input type="text" id="" name="" placeholder="Nhập họ và tên">
+
+        <label for=""><strong>Email</strong></label>
+        <input type="text" id="" name="" placeholder="Nhập Email">
+
+        <label for=""><strong>Số điện thoại</strong></label>
+        <input type="text" id="" name="" placeholder="Nhập số điện thoại">
+
+        <label for=""><strong>Bạn cần hỗ trợ?</strong></label>
+        <textarea id="" name="" placeholder="Bạn cần hỗ trợ" style="height:150px"></textarea>
+
+        <input class="submit" type="" value="GỬI ĐI">
+
+    </form>
+    </div>
+
+    <div class="container">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ShXbmcSuAVC5fppWMwQn0n5NsK4q3eQ&ehbc=2E312F"
+            width="100%" height="500"></iframe>
+    </div>
+<br><br>
+    <div>
+        <h1>Địa chỉ liên hệ</h1>
+        <br>
+        <p style="text-align: center;">
+            Email: LMT@gmail.com <br>
+            Facebook: TLM <br>
+            Instagram: LMT <br>
+            Zalo: +84123456789 <br>
+            Phone: +84123456789 <br>
+            Địa chỉ: Công Viên Phần Mềm Quang Trung, Quận 12, TPHCM
+        </p>
+    </div>
+
+
+
+    <div id="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="../img/Apple-Logo.png" alt="" width="200px">
+            </div>
+
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href="../page/trangchu.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="../page/sanpham.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="../page/lienhe.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="../page/tintuc.html">Tin tức</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href=""><box-icon name='phone'></box-icon> +8412345678</a>
+                </div>
+                <div class="item">
+                    <a href=""><box-icon name='mail-send'></box-icon>LMT@gmail.com</a>
+                </div>
+                <div class="item">
+                    <a href=""><box-icon name='map'></box-icon>Lê Văn Sĩ, Q3, TP.HCM</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>ĐĂNG KÍ NHẬN BẢN TIN MỚI NHẤT</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </form>
+        </div>
+
+</body>
+
+</html>

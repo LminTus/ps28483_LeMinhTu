@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(19, 18, 18, 0.79);
+            position: relative;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+
+        }
+
+        .menu li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 16px 10px;
+        }
+        
+        .menu li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .login {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            translate: 0 -50%;
+        }
+        .login li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .login li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 16px 10px;
+        }
+
+        li:hover {
+            background-color: red;
+        }
+
+        .bgr {
+            position: relative;
+        }
+
+        .img-bgr {
+            height: 600px;
+            background: url(./img/iphone.png) no-repeat;
+            background-size: 100% auto;
+            text-align: center;
+            background-position: center center;
+            opacity: 0.6;
+        }
+
+        .bgr .text-bgr {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+        }
+
+        .bgr h1 {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 5px red;
+            font-size: 28px;
+        }
+
+        .bgr p {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            text-shadow: 0 0 5px red;
+            font-size: 28px;
+        }
+
+        .btn:link,
+        .btn-visited {
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: relative;
+
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        }
+
+        .btn:active {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        }
+
+        .btn-white {
+            background-color: #fff;
+            color: #777;
+        }
+        .container2{
+            width: 90%;
+            height: 480px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .container2>.col2{
+        width: calc(50% - 20px);
+        height: 400px;
+        float: left;
+        }
+        .container2>.col2>img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .container2>.p{
+            font-size: 30px;
+            text-align: justify;
+            color: #282828;
+        }
+        .mr20{
+            margin-right: 40px ;
+        }
+        .text{
+            width: 90%;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .text > h2{
+            font-size: 34px;
+            text-align: left;
+            color: #282828;
+
+        }
+        .text>p{
+            font-size: 20px;
+            text-align: justify;
+            color: #282828;
+        }
+
+        .video{
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .video>iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+       
+       
+        #footer {
+            width: 100%;
+            background: rgba(19, 18, 18, 0.79);
+            height: 322px;          
+            padding: 0px 63px;
+            padding-top: 57px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #footer .box {
+            width: 3000px;
+            color: #fff;
+        }
+
+        #footer .box .quick-menu {
+            margin-top: 40px;
+
+        }
+
+
+        #footer .box .quick-menu .item {
+            margin-bottom: 12px;
+
+        }
+
+        #footer .box .quick-menu,
+        .item a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+
+        #footer .box form input {
+            width: 294px;
+            height: 42px;
+            background: transparent;
+            padding-left: 20px;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        #footer .box form button {
+            background: #362f2f;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0.25);
+            width: 163px;
+            height: 38px;
+            margin-top: 29px;
+            color: #fff;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./img/Apple-Logo.png" alt="logo">
+        <div class="menu">
+            <ul>
+                <li><a href="./page/trangchu.html">Trang chủ</a></li>
+                <li><a href="./page/sanpham.html">Sản phẩm</a></li>
+                <li><a href="./page/tintuc.html">Tin tức</a></li>                
+                <li><a href="./page/lienhe.html">Liên hệ</a></li>
+
+            </ul>
+        </div>
+        <div class="login">
+            <ul>
+                <li>Đăng kí</li>
+                <li><a href="./page/dangnhap.html">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bgr">
+        <div class="img-bgr">
+
+        </div>
+        <div class="text-bgr">
+            <h1>IPHONE</h1>
+            <p>SMARTPHONE</p>
+            <br>
+            <a href="#" class="btn btn-white">MUA NGAY</a>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="col2 mr20">
+            <img src="./img/14proM.webp" width="500px" alt="">
+            <p>IPhone 13 Pro và 13 Pro Max chỉ còn một lượng nhỏ tại Việt Nam, dự kiến đủ bán đến cuối tháng và hầu hết có bộ nhớ lớn.
+                Trên website một số đại lý phân phối chính hãng hàng Apple tại Việt Nam như FPT Shop, CellPhoneS, Di Động Việt...,
+                 bộ đôi iPhone 13 Pro hiện chỉ còn một vài phiên bản bộ nhớ lớn và giới hạn về màu sắc.</p>
+        </div>
+        <div class="col2">
+            <img src="./img/ip14.jpg" width="500px" alt="">
+            <P>IPhone 14 Pro và Pro Max đổi thiết kế từ màn hình tai thỏ sang dạng viên thuốc, trong khi bản mini được thay bằng 14 Plus với kích cỡ 6,7 inch.</P>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="text">
+        <h2>iPhone 14 Pro Max giảm 3,5 triệu đồng trong một tháng</h2>
+        <p>Trong tháng đầu năm, iPhone 14 Pro Max đã có ba đợt giảm giá lớn, đưa máy từ 31,8 triệu đồng xuống còn 28,4 triệu đồng.
+
+            Đầu tháng 1, các đại lý phân phối chính hãng Apple tại Việt Nam (AAR) cho biết một đợt hàng lớn được bổ sung cho thị trường, chấm dứt cơn khát iPhone 14 Pro Max.
+            
+            Nguồn hàng dư giả cũng khiến giá iPhone được điều chỉnh mạnh. Cuối tháng 12/2022, iPhone 14 Pro Max bản 128 GB có giá 33,9 triệu đồng, nhưng đến đầu tháng 1, máy giảm 2 triệu đồng xuống còn 31,8 triệu đồng. Hai tuần sau, model này được điều chỉnh thêm hai triệu đồng xuống 29,8 triệu đồng. Tuần này, một số AAR tiếp tục đưa máy về mức 28,3 triệu đồng.
+            
+            Như vậy trong một tháng, mỗi chiếc iPhone 14 Pro Max đã giảm 3,5 triệu đồng. So với khi mới lên kệ chỉ cách đây bốn tháng, máy giảm 9 triệu đồng.
+            
+            Phiên bản bộ nhớ lớn một TB giảm thêm 4,4 triệu đồng so với tháng trước, từ 45,9 triệu xuống còn 41,5 triệu đồng. Trong khi đó, mẫu iPhone 14 Pro bản 128 GB cũng được điều chỉnh về 25,5 triệu, hạ thêm một triệu đồng.
+            
+            </p>
+    </div>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jBROQGmPKX4?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+    
+    <div id="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="./img/Apple-Logo.png" alt="" width="200px" >
+            </div>
+
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href="./page/trangchu.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="./page/sanpham.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="./page/lienhe.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="./page/tintuc.html">Tin tức</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href=""><box-icon name='phone'></box-icon> +8412345678</a>
+                </div>
+                <div class="item">
+                    <a href=""><box-icon name='mail-send'></box-icon>LMT@gmail.com</a>
+                </div>
+                <div class="item">
+                    <a href=""><box-icon name='map'></box-icon>Lê Văn Sĩ, Q3, TP.HCM</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>ĐĂNG KÍ NHẬN BẢN TIN MỚI NHẤT</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </form>
+        </div>
+
+
+</body>
+
+</html>
